@@ -1,29 +1,18 @@
 // header component structure
 // import libs for making component
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text } from 'react-native';
 
 // make component
 const Header = () => {
-  const { textStyle, viewStyle } = styles;
+  const { textStyle } = styles;
 
-  return (
-    <View style={viewStyle}>
-      <Text style={textStyle}>Albums!</Text>
-    </View>
-  );
+  return <Text style={textStyle}>Albums!</Text>;
 };
 
 const styles = {
-  viewStyle {
-    backgroundColor: '#F8F8F8',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: 60,
-    paddingTop: 15
-  };
   textStyle: {
-    fontSize: 20,
+    fontSize: 20
   }
 };
 
